@@ -1,2 +1,2 @@
-export * from './recipes.component';
-export { RecipeClass } from './recipe-class'
+export { RecipesComponent } from './recipes.component';
+export { RecipeClass } from './recipe-class';

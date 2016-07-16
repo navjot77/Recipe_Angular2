@@ -1,9 +1,9 @@
 <div class="row" >
   <div class="col-md-5" style="border: 3px solid black">
-    <rp-recipe-list></rp-recipe-list>
+    <rp-recipe-list (selectedRecipe)="selectedRecipe=$event"></rp-recipe-list>
   </div>
   <div class="col-md-5 " style="border: 3px solid black">
-    <h2>Details!</h2>
+    <rp-recipe-detail [selectedRecipe]="selectedRecipe"></rp-recipe-detail>
   </div>
 </div>
   

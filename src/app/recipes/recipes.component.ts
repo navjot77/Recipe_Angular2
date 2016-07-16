@@ -1,17 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { RecipeListComponent } from './recipe-list/'
+import { RecipeClass } from './recipe-class';
+import { RecipeListComponent } from './recipe-list';
+import {RecipeDetailComponent} from './recipe-detail';
+
+
 
 @Component({
   moduleId: module.id,
   selector: 'rp-recipes',
   templateUrl: 'recipes.component.html',
-  directives: [ RecipeListComponent ]
+  directives: [ RecipeListComponent, RecipeDetailComponent ]
 })
 export class RecipesComponent implements OnInit {
-
+selectedRecipe: RecipeClass;
   constructor() { }
 
   ngOnInit() {
   }
+
+
 
 }
